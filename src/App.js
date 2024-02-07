@@ -2,23 +2,22 @@ import "./App.css";
 import { differenceInWeeks } from "date-fns";
 import { useEffect, useState } from "react";
 
-// const projectDate = new Date("2024-01-01");
-const projectDate = new Date("2024-02-07");
+const projectDate = new Date("2024-01-01");
 const rosterTable = ["luan", "peter", "zhizen", "naran"];
-const offset = 3;
+const offset = 2;
+const getDuty = () => {
+    let weeks = differenceInWeeks(new Date(), projectDate, {roundingMethod: "floor"});
+    let selection = (weeks + offset) % 4;
+    return rosterTable[selection]
+}
 
 function App() {
-    const [duty, setDuty] = useState("")
+    const [duty, setDuty] = useState(getDuty())
 
     useEffect(() => {
-        const update = () => {
-            let weeks = differenceInWeeks(new Date(), projectDate);
-            let selection = (weeks + offset) % 4;
-            console.log("current roster", rosterTable[selection]);
-            setDuty(rosterTable[selection])
-        }
-        update()
-        setInterval(update, 60000)
+        setInterval(() => {
+            setDuty(getDuty())
+        }, 60000)
     }, []);
 
     return (
@@ -44,6 +43,7 @@ function App() {
                                     clean the <b>sink</b> at least <em>twice</em> per week
                                 </li>
                             </ul>
+                            <p>Let's work together to keep the kitchen clean!!! </p>
                         </div>
                     </div>
                 </div>
