@@ -45,3 +45,27 @@
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
 }
+
+.schedule {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.schedule > p {
+  text-align: left;
+}
+
+.schedule-table {
+  width: 100%;
+  border: 1px solid;
+}
+
+.schedule-table, td {
+  border: 1px solid;
+}
+
+.schedule-table > tr > td:first-of-type {
+  width: 3rem;
+}
+
