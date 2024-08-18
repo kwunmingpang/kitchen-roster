@@ -2,7 +2,7 @@ import "./App.css";
 import { differenceInWeeks } from "date-fns";
 import { useEffect, useState } from "react";
 
-const projectDate = new Date("2024-08-05");
+const projectDate = new Date("2024-08-05T00:00:00.000+10:00");
 const rosterTable = ["naran", "victor", "zhi zen", "peter"];
 const offset = 2;
 
