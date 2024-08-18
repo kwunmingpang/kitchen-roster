@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/kitchen-roster/static/css/main.08c8993b.css",
-    "main.js": "/kitchen-roster/static/js/main.121e8443.js",
+    "main.js": "/kitchen-roster/static/js/main.ee3b8fdb.js",
     "static/js/592.0eb51e27.chunk.js": "/kitchen-roster/static/js/592.0eb51e27.chunk.js",
     "index.html": "/kitchen-roster/index.html",
     "main.08c8993b.css.map": "/kitchen-roster/static/css/main.08c8993b.css.map",
-    "main.121e8443.js.map": "/kitchen-roster/static/js/main.121e8443.js.map",
+    "main.ee3b8fdb.js.map": "/kitchen-roster/static/js/main.ee3b8fdb.js.map",
     "592.0eb51e27.chunk.js.map": "/kitchen-roster/static/js/592.0eb51e27.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.08c8993b.css",
-    "static/js/main.121e8443.js"
+    "static/js/main.ee3b8fdb.js"
   ]
 }
